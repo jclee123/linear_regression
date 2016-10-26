@@ -1,6 +1,7 @@
 
 def linear_regression():
     #sample inputs (y is output array, x can be any n+1 dimensional array (first array set to all 1))
+	#so, in the sample case, the first traning example would be x_1=(1,1), y_1=(2)
     y=[2,2,6,9,11,12,14]
     x=[[1,1,1,1,1,1,1],[1,2,3,4,5,7,8],[1,3,5,8,9,12,13]]
 
