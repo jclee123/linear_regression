@@ -1,12 +1,11 @@
 
-linear_regression()
-
-
 def linear_regression():
     #sample inputs (y is output array, x can be any n+1 dimensional array (first array set to all 1))
     y=[2,2,6,9,11,12,14]
     x=[[1,1,1,1,1,1,1],[1,2,3,4,5,7,8],[1,3,5,8,9,12,13]]
 
+    for i in range(len(x)):
+        assert (len(y)==len(x[i]))
 
     #x_0*theta_0 + x_1*theta_1+x_2*theta_2... and so on consists of the hypothesis
     #x_0 is always assumed to be 1.
@@ -46,3 +45,6 @@ def linear_regression():
 
     #for output in range(len(y)):
     #    print(theta[0]+theta[1]*x[1][output]+theta[2]*x[2][output])
+
+
+linear_regression()
